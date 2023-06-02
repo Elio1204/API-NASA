@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  color: white;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  align-items: center; 
+  background: url(./back.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.blur-box {
+  margin: auto;
+  width: 100%;
+  max-width: 450px; 
+  height: 500px;
+  border-radius: 4%;
+  object-fit: cover;
+  float: left;
+}
+
+
+.blur-box img {
+  margin: auto;
+  width: 100%;
+  height: 440px;
+  border-radius: 4%;
+  object-fit: cover;
+}
+
+.blur-box1 {
+  margin: auto;
+  width: 100%;
+  max-width: 700px; 
+  min-height: 440px;
+  color: rgb(216, 215, 215);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 4%;
+  float: left;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  word-spacing: 2px;
+  letter-spacing: 1px; 
+  font-size: 24px; 
+}
+
+.pr {
+  word-spacing: 1px;
+  text-align: center;
+  margin: 20px;
+}
+
+.date {
+  text-align: center;
+  padding: 5px 0;
+  letter-spacing: 1px; 
+}
+
+.by {
+  text-align: center; 
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  .blur-box {
+    margin: 10px;
+  }
+
+  .blur-box img {
+    margin: 10px;
+    height: 300px; 
+  }
+
+  .blur-box1 {
+    margin: 10px;
+    height: 400px; 
+  }
+
+  .title {
+    font-size: 18px; 
+  }
+
+  .pr {
+    margin: 10px;
+  }
+}
